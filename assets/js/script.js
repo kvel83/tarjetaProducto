@@ -1,10 +1,10 @@
-function validaCantidad(){
+const validaCantidad = () => {
     if (Number.isInteger(parseInt(document.querySelector('#cantidad').value)) && parseInt(document.querySelector('#cantidad').value) > 0)
         return true;
     else
         return false;
 }
-function isValidColor() {
+  const isValidColor = () =>{
     const color = document.querySelector('#color').value;
     var s = new Option().style;
     s.color = color;
